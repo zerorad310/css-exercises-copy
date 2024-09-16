@@ -17,12 +17,24 @@
   padding: 0;
   margin: 0;
   background-color: rgb(99, 97, 97);
+  animation-name: blinds;
+	animation-duration: 1s;
+  animation-timing-function: linear;
+  transform-origin: center top;
+
 
   display: none;
 }
 
 ul.dropdown-menu li:hover {
   background: rgb(47, 46, 46);
+}
+
+@keyframes blinds {
+	0% { transform: translateY(0%) scaleY(0.6); }
+	50% { transform: translateY(0%) scaleY(1); }
+	70% { transform: translateY(0%) scaleY(1.2); }
+	100% { transform: translateY(0%) scaleY(1); }
 }
 
 .visible {
