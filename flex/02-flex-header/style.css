@@ -1,6 +1,10 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Add padding to give space around the entire header */
 }
 
 .logo {
@@ -8,18 +12,99 @@
   font-weight: 900;
   color: tomato;
   background: white;
-  padding: 4px 32px;
+  height: 50px;
+  width: 150px; /* Adjust the width for better balance */
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  margin: 0 20px; /* Add margin to prevent touching the left/right elements */
 }
 
 ul {
-  /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  gap: 10px; /* Space between items */
+  padding: 0;
+  margin: 0;
 }
 
 a {
-  font-size: 22px;
+  font-size: 20px;
   background: white;
   padding: 8px;
-  /* this removes the line under the links */
   text-decoration: none;
+  display: block; /* Keep anchor items block-level to ensure correct spacing */
 }
+
+.left-links,
+.right-links {
+  display: flex;
+}
+
+
+
+
+/* 
+.header  {
+  font-family: monospace;
+  background: papayawhip;
+  display: flex;
+  width: auto
+  height: auto;
+  
+  align-items: center;
+  justify-content: space-between;
+
+} */
+ /* padding: 10px 30px; */
+
+
+
+/* .logo {
+  font-size: 48px;
+  font-weight: 900;
+  color: tomato;
+  background: white;
+  height: 50px;
+  weight: 50px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+
+} */
+
+
+
+  /* this removes the dots on the list items*/
+/* ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  padding: 0; 
+  margin: 0; 
+
+} */
+
+
+
+
+/* this removes the line under the links */
+/* a {
+  font-size: 20px;
+  background: white;
+  padding: 8px;
+  
+  text-decoration: none;
+  display: flex;
+  
+} */
+
+/* .left-links {
+  margin-right: auto;
+  justify-content: center;
+}
+  
+.right-links {
+  margin-left: auto;
+  justify-content: center;
+} */
